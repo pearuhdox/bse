@@ -1,1 +1,0 @@
-execute if score #installed bse.main matches 1 run function bse:loop
