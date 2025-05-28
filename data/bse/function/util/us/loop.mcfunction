@@ -16,6 +16,8 @@ scoreboard players set mtp= bse.temp 0
 scoreboard players set update= bse.temp 0
 execute at @s if block ~ ~ ~ spawner if data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:util/us/verify_id
 
+execute at @s if block ~ ~ ~ trial_spawner if data block ~ ~ ~ normal_config.spawn_potentials[0].data.entity."bse:id" run function bse:util/us/verify_id
+
 #updating if flagged to do so
 execute if score update= bse.temp matches 1 at @s run function bse:util/us/update
 
