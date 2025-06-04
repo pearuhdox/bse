@@ -1,6 +1,4 @@
-function bse:util/si
 data modify storage bse:main current set value {target_cooldown_length:36000,required_player_range:14,normal_config:{spawn_range:4,total_mobs:6,simultaneous_mobs:2,total_mobs_added_per_player:2,simultaneous_mobs_added_per_player:1,ticks_between_spawn:40},ominous_config:{spawn_range:4,total_mobs:6,simultaneous_mobs:2,total_mobs_added_per_player:2,simultaneous_mobs_added_per_player:1,ticks_between_spawn:40}}
-
 data modify storage bse:main current merge from storage bse:main spawners[{selected:1b}].data
 
 #setting up item object

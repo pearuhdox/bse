@@ -17,4 +17,5 @@ data remove storage bse:main current.total_mobs_spawned
 data remove storage bse:main current.ejecting_loot_table
 data remove storage bse:main current.next_mob_spawns_at
 
-#function bse:util/ctc/fix_tag
+# should no longer be needed
+# function bse:util/ctc/fix_tag

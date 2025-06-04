@@ -1,4 +1,3 @@
-function bse:util/si
 data modify storage bse:main current set from storage bse:main spawners[{selected:1b}].data
 
 #setting up item object
