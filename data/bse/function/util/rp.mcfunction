@@ -1,5 +1,5 @@
-execute if block ~ ~ ~ spawner run data modify block ~ ~ ~ SpawnData.entity."bse:id" set from storage bse:main spawners[{selected:1b}].id.int
-execute if block ~ ~ ~ trial_spawner run data modify block ~ ~ ~ normal_config.spawn_potentials[0].data.entity."bse:id" set from storage bse:main spawners[{selected:1b}].id.int
+execute store result score bse_id= bse.temp run data get storage bse:main spawners[{selected:1b}].id.int
+function bse:spawner/set_id
 
 function bse:util/gpa
 data modify storage bse:main spawners[{selected:1b}].positions append from storage bse:temp pos

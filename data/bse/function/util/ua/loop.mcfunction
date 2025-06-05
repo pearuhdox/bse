@@ -10,10 +10,7 @@ execute at @s run scoreboard players set remove_forceload= bse.temp 0
 execute at @s unless predicate bse:loaded run function bse:util/ua/load
 
 #removing bse:id
-execute at @s if block ~ ~ ~ spawner run data remove block ~ ~ ~ SpawnData.entity."bse:id"
-execute at @s if block ~ ~ ~ spawner run data remove block ~ ~ ~ SpawnPotentials[].data.entity."bse:id"
-
-execute at @s if block ~ ~ ~ trial_spawner run data remove block ~ ~ ~ normal_config.spawn_potentials[0].data.entity."bse:id"
+function bse:spawner/remove_id
 
 #removing forceload if flagged to do so
 execute if score remove_forceload= bse.temp matches 1 at @s run forceload remove ~ ~

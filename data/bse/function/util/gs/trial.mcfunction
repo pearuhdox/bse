@@ -60,11 +60,17 @@ execute store result storage bse:main temps.2 int 1 run data get storage bse:mai
 data modify block 29999999 1 6452069 front_text.messages[0] set value [{"translate":" Mobs At Once: %s, Per Player Bonus: %s","color":"gray","italic":false,"with":[{"nbt":"temps.1","storage":"bse:main","color":"gold"},{"nbt":"temps.2","storage":"bse:main","color":"gold"}]}]
 data modify storage bse:main item.components.minecraft:lore append from block 29999999 1 6452069 front_text.messages[0]
 
-data modify storage bse:main item.components.minecraft:lore append value [{"text":"List of spawnable entities:","color":"white","italic":false}]
 ##generating spawn potentials lore
+data modify storage bse:main item.components.minecraft:lore append value [{"text":"Normal spawnable entities:","color":"white","italic":false}]
 data modify storage bse:main spt set value []
 data modify storage bse:main spt set from storage bse:main current.normal_config.spawn_potentials
-execute unless data storage bse:main spt[0] run data modify storage bse:main spt[].data set from storage bse:main current.spawn_data
+function bse:spawner/give/spawner_lore_trial
+data remove storage bse:main temps
+data remove storage bse:main spt
+
+data modify storage bse:main item.components.minecraft:lore append value [{"text":"Ominous spawnable entities:","color":"white","italic":false}]
+data modify storage bse:main spt set value []
+data modify storage bse:main spt set from storage bse:main current.ominous_config.spawn_potentials
 function bse:spawner/give/spawner_lore_trial
 data remove storage bse:main temps
 data remove storage bse:main spt

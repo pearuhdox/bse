@@ -1,6 +1,8 @@
+execute if data block ~ ~ ~ SpawnData unless data block ~ ~ ~ SpawnPotentials[0] run function bse:util/ctc/fix_potentials
+
 data modify storage bse:main current set value {}
 data modify storage bse:main current set from block ~ ~ ~
-data remove storage bse:main current.x
+
 data remove storage bse:main current.y
 data remove storage bse:main current.z
 data remove storage bse:main current.id
