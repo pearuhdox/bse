@@ -3,7 +3,7 @@ function bse:unmark_all_spawners
 
 #removing scoreboards
 scoreboard objectives remove bse.request
-scoreboard objectives remove bse.settings
+#scoreboard objectives remove bse.settings
 scoreboard objectives remove bse.main
 scoreboard objectives remove bse.temp
 scoreboard objectives remove bse.num

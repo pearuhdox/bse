@@ -6,9 +6,9 @@ execute if score gamemode= bse.temp matches 1 unless score @s bse.request matche
 execute if score gamemode= bse.temp matches 0 run scoreboard players reset @s bse.request
 execute if score gamemode= bse.temp matches 1 run scoreboard players enable @s bse.request
 
-execute if score gamemode= bse.temp matches 1 unless score @s bse.settings matches -2 run function bse:player/settings_triggered
-execute if score gamemode= bse.temp matches 0 run scoreboard players reset @s bse.settings
-execute if score gamemode= bse.temp matches 1 run scoreboard players enable @s bse.settings
+#execute if score gamemode= bse.temp matches 1 unless score @s bse.settings matches -2 run function bse:player/settings_triggered
+#execute if score gamemode= bse.temp matches 0 run scoreboard players reset @s bse.settings
+#execute if score gamemode= bse.temp matches 1 run scoreboard players enable @s bse.settings
 
 #nearby spawner detection
 execute store result score holding= bse.temp if predicate bse:has_tool

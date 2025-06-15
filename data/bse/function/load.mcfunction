@@ -1,6 +1,6 @@
 #adding scoreboards
 scoreboard objectives add bse.request trigger
-scoreboard objectives add bse.settings trigger
+#scoreboard objectives add bse.settings trigger
 scoreboard objectives add bse.main dummy
 scoreboard objectives add bse.temp dummy
 scoreboard objectives add bse.num dummy
